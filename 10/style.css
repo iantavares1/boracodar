@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  background: url(./assets/background.png) right;
+  background-size: cover;
+}
+
+/* @media (max-width: 75rem){
+}
+@media (max-width: 64rem){
+}
+@media (max-width: 48rem){
+}
+@media (max-width: 30rem) {
+} */
+
+
+
+
+
+
+ 
+
+
+

@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  user-select: none;
+  --text-color: #0f172a;
+  --bg-color: #f8fafc;
+  --bg-app: white;
+  --img-brightness: brightness(0);
+  --currency-border: 0.1rem solid #94a3b8;
+  --selector-bg-color: var(--bg-app);
+  --list-bg-hover: #ede9fe;
+}
+
+.dark {
+  --text-color: white;
+  --bg-color: rgb(19, 19, 26);
+  --bg-app: #0d0d0d;
+  --currency-border: 0.1rem solid #ffffff;
+  --img-brightness: brightness(999);
+  --selector-bg-color: var(--bg-app);
+  --list-bg-hover: #160e36;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.focus-border {
+  border: 1.5rem solid #7c3aed;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+#app {
+  flex-direction: column;
+  padding: 6.4rem 8rem;
+  gap: 6.4rem;
+  background: var(--bg-app);
+  box-shadow: 0rem 0.4rem 3.2rem rgba(15, 23, 42, 0.15);
+  border-radius: 1.6rem;
+}
+
+#top {
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+#top span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+#top-title {
+  align-items: center;
+  justify-content: space-between;
+}
+
+#appearence {
+  align-items: center;
+}
+
+#appearence :hover {
+  cursor: pointer;
+}
+
+#appearence img {
+  transform: rotate(180deg);
+  width: 2rem;
+  height: 2rem;
+}
+
+#converter {
+  gap: 1.6rem;
+}
+
+#converter > img,
+.selector > :nth-child(3) {
+  filter: var(--img-brightness);
+}
+
+.currency {
+  width: 29.2rem;
+  height: 5.6rem;
+  border: var(--currency-border);
+  border-radius: 0.8rem;
+  align-items: center;
+}
+
+.value {
+  align-items: flex-start;
+  padding: 1.6rem;
+  gap: 0.8rem;
+  width: 16.2rem;
+  height: 5.6rem;
+}
+
+.divider {
+  width: 0rem;
+  height: 2.4rem;
+  border: 0.1rem solid #94a3b8;
+}
+
+.selector {
+  position: relative;
+  padding: 1.6rem;
+  gap: 0.8rem;
+}
+
+.selector:hover {
+  cursor: pointer;
+}
+
+.list {
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  height: 14.8rem;
+  left: 0;
+  top: 6rem;
+  overflow-y: scroll;
+  background-color: var(--bg-app);
+  box-shadow: 0rem 0.4rem 1.6rem rgba(15, 23, 42, 0.15);
+  border-radius: 0.8rem;
+}
+
+.list div {
+  width: 13rem;
+  padding: 1.6rem;
+  gap: 0.8rem;
+}
+
+.list :hover {
+  background: var(--list-bg-hover);
+}
+
+.list::-webkit-scrollbar {
+  width: 0.2rem;
+  background: #94a3b8;
+  border-radius: 9.9rem;
+}
+
+#bottom {
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+#axle-y {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.6rem;
+  width: 2.4rem;
+  height: 30rem;
+
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: center;
+  opacity: 0.8;
+}
+
+#chart {
+  gap: 2.4rem;
+}
+
+#box-chart {
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+#period-section {
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+#period-section span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.8rem;
+  height: 3.2rem;
+}
+
+#period-section :nth-child(3) {
+  background: #7c3aed;
+  border-radius: 99.9rem;
+  color: white;
+}
+
+@media (max-width: 96rem) {
+  #app {
+    width: 60rem;
+    padding: 4rem;
+  }
+  #box-chart {
+    width: 45rem;
+  }
+  #axle-y {
+    height: 23rem;
+  }
+  .currency {
+    width: 50rem;
+    justify-content: space-around;
+  }
+  #converter {
+    flex-direction: column;
+    align-items: center;
+  }
+  #converter > img {
+    width: 2.4rem;
+  }
+}
+
+@media (max-width: 68rem) {
+  #app {
+    width: 40rem;
+    padding: 2rem;
+  }
+  .currency {
+    width: 36rem;
+    justify-content: space-around;
+  }
+  #box-chart {
+    width: 30rem;
+  }
+  #axle-y {
+    height: 15.5rem;
+  }
+  #chart {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 44rem) {
+  #app {
+    width: 36rem;
+    padding: 2rem;
+  }
+  .currency {
+    width: 30rem;
+    justify-content: space-around;
+  }
+  #box-chart {
+    width: 27rem;
+  }
+  #axle-y {
+    width: 13rem;
+  }
+}

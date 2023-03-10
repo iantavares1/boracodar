@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de moedas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <div id=app class="flex">
+
+    <div id="top" class="flex">
+
+      <div id="top-title" class="flex">
+        <h1>Conversor de moedas</h1>
+        <div id="appearence" class="flex" onclick="switchAppearence()">
+          <img src="./assets/darkmode.svg">
+        </div>
+      </div>
+
+      <div id="converter" class="flex">
+
+        <div id="first-currency" class="currency flex">
+          <div class="value flex">
+            <span>$ 1.000</span>
+          </div>
+          <div class="divider"></div>
+          <div id="first-selector" class="selector flex" onclick="toggleListDisplay()">
+            <img src="./assets/usa-flag.svg" alt="Bandeira Estados Unidos">
+            <span>USD</span>
+            <img src="./assets/dropdown.svg">
+            <div id="first-list" class="list flex hidden">
+              
+              <div class="flex">
+                <img src="./assets/eur-flag.svg">
+                <span>EUR</span>
+              </div>
+              <div class="flex">
+                <img src="./assets/gpb-flag.svg">
+                <span>GPB</span>
+              </div>
+              <div class="flex">
+                <img src="./assets/cfh-flag.svg">
+                <span>CFH</span>
+              </div><div class="flex">
+                <img src="./assets/jpy-flag.svg">
+                <span>JPY</span>
+              </div>  
+             
+            </div>
+          </div>
+        </div>
+
+        <img src="./assets/arrows.svg">
+        
+        <div id="second-currency" class="currency flex">
+          <div class="value flex">
+            <span>R$ 5.148,20</span>
+          </div>
+          <div class="divider"></div>
+          <div id="second-selector" class="selector flex" onclick="toggleListDisplay2()">
+            <img src="./assets/bra-flag.svg" alt="Bandeira Brasil">
+            <span>BRL</span>
+            <img src="./assets/dropdown.svg">
+            <div id="second-list" class="list flex hidden">
+              
+              <div class="flex">
+                <img src="./assets/eur-flag.svg">
+                <span>EUR</span>
+              </div>
+              <div class="flex">
+                <img src="./assets/gpb-flag.svg">
+                <span>GPB</span>
+              </div>
+              <div class="flex">
+                <img src="./assets/cfh-flag.svg">
+                <span>CFH</span>
+              </div><div class="flex">
+                <img src="./assets/jpy-flag.svg">
+                <span>JPY</span>
+              </div>  
+             
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="bottom" class="flex">
+
+      <h1>Taxa de câmbio</h1>
+
+      <div id="chart" class="flex">
+
+        <div id="axle-y" class="flex">
+          <span>5,3</span>
+          <span>5,2</span>
+          <span>5,1</span>
+          <span>5,0</span>
+        </div>
+
+        <div id="box-chart" class="flex">
+          <img src="./assets/chart.svg" alt="Gráfico histórico do dólar">
+          <div id="period-section" class="flex">
+            <span>1D</span>
+            <span>5D</span>
+            <span>1M</span>
+            <span>1A</span>
+            <span>5A</span>
+            <span>Máx</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Rubik";
+  background: linear-gradient(167.96deg, #8257e5 0%, #1b1a45 100%);
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+}
+
+#boarding-pass {
+  margin: 40px calc(50% - 328px / 2);
+  width: 327px;
+  height: 656px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  display: flex;
+  color: #ffffff;
+}
+
+#ticket {
+  width: 327px;
+  height: 544px;
+  border-radius: 24px;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header {
+  width: 327px;
+  height: 191px;
+  padding: 24px 32px;
+  background-color: white;
+  border-radius: 24px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+header #top {
+  width: 263px;
+  height: 36px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#flight-number {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 36px;
+}
+
+#flight,
+#date,
+#seat, 
+#passanger,
+.first-span {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+#value,
+#date-number,
+#name,
+#seat-number,
+.second-span {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+#flight-date {
+  display: flex;
+  flex-direction: column;
+  width: 94px;
+  height: 36px;
+}
+
+header #bottom {
+  width: 263px;
+  height: 83px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 39px;
+}
+
+#departure {
+  width: 103px;
+  height: 83px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.city {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.airport {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.time {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#time-zone {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#airplane {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: calc(50% - 24px / 2);
+  top: 54px;
+}
+
+#arrival {
+  width: 121px;
+  height: 83px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#arrival-time {
+  display: flex;
+}
+
+mid {
+  width: 327px;
+  height: 84px;
+  border-radius: 24px;
+  background-color: white;
+  padding: 24px 32px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#passanger-name,
+#seat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#boarding-info {
+  background-color: white;
+  width: 327px;
+  height: 269px;
+  border-radius: 24px;
+
+  padding: 24px 32px;
+}
+
+#boarding-info #main-box {
+  width: 263px;
+  height: 177px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#info {
+  width: 95px;
+  height: 150px;
+  margin: 13.5px 0px 168px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#boarding-time div {
+  width: 54px;
+  height: 27px;
+  background: #633bbc;
+  border-radius: 8px;
+  padding: 4px 0px;
+  text-align: center;
+}
+
+#sixteen-fifteen {
+  font-size: 16px;
+  color: #fff;
+}
+
+#boarding-time {
+  width: 95px;
+  height: 46px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#terminal,
+#gate {
+  width: 95px;
+  height: 36px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#qrcode {
+  width: 160px;
+  height: 177px;
+  text-align: center;
+}
+
+#qrcode img {
+  padding: 10px 10px 0px 10px;
+}
+
+#qrcode span {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+#boarding-text {
+  width: 263px;
+  height: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#start-text {
+  font-size: 13px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#end-text {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.divider {
+  background-color: white;
+  width: 280px;
+  height: 0px;
+  border: 1px dashed rgba(0, 0, 0, 0.32);
+}
+
+#qualquer-problema {
+  width: 269.14px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  opacity: 0.64;
+}
