@@ -18,6 +18,10 @@ body {
   background-size: cover;
 }
 
+.main{
+  background: url(./assets/main-bg.svg);
+}
+
 /* @media (max-width: 75rem){
 }
 @media (max-width: 64rem){
