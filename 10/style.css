@@ -12,31 +12,137 @@
 
 body {
   font-size: 1.6rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   height: 100vh;
-  background: url(./assets/background.png) right;
+  background: url(./assets/backgrounds/background.png) right;
   background-size: cover;
+  display: grid;
+  place-content: center;
 }
 
-.main{
-  background: url(./assets/main-bg.svg);
+white {
+  color: #ffffff;
 }
 
-/* @media (max-width: 75rem){
+.main {
+  position: relative;
+  background: url(./assets/backgrounds/main-bg.svg);
+  border-radius: 1rem;
+  height: 48rem;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-@media (max-width: 64rem){
+
+.main span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  color: #c2bff4;
 }
-@media (max-width: 48rem){
+
+.main > img {
+  position: absolute;
+  left: -5.6rem;
+  top: -5.6rem;
 }
-@media (max-width: 30rem) {
+
+.location {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #c2bff4;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  margin: 2.5rem 2.5rem 0 0;
+}
+
+.temperature {
+  align-self: center;
+  display: grid;
+  gap: 0.4rem;
+  height: 13.4rem;
+  margin-bottom: 8rem;
+}
+
+.temperature > span {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.temperature-number {
+  display: flex;
+}
+
+.temperature-number h1 {
+  font-weight: 700;
+  font-size: 8.8rem;
+  line-height: 10.6rem;
+}
+
+.temperature-number span {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #dad8f7;
+}
+
+.statistics {
+  display: flex;
+  gap: 0.8rem;
+}
+.statistics > div {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1.6rem;
+  gap: 1.2rem;
+  width: 14.6rem;
+  height: 6rem;
+  background: rgba(102, 96, 200, 0.6);
+  border-radius: 0.6rem;
+  color: #e7e6fb;
+  font-weight: 700;
+}
+
+.statistics .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistics span {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.statistics p {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.statistics p2 {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+.info .number {
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-end;
+}
+
+/* @media (min-width: 30rem){
+}
+
+@media (min-width: 48rem){
+} 
+
+@media (min-width: 64rem){
+}
+
+@media (min-width: 75rem){
 } */
-
-
-
-
-
-
- 
-
-
-
