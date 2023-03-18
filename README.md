@@ -64,7 +64,7 @@
         </tr>
         <tr>
             <td><a href="11">Tela de login</a></td>
-            <td>EM ANDAMENTO</td>
+            <td>18/03/23</td>
             <td align="center" ><a href="11"><img width="300px" src="11/.github/preview.jpg" /></a></td>
         </tr>
     </tbody>
