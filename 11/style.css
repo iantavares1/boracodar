@@ -45,6 +45,7 @@ a{
 
 a:hover{
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .app {
@@ -73,7 +74,7 @@ a:hover{
   gap: 1.6rem;
 }
 
-.inputs {
+form {
   display: grid;
   gap: 1.6rem;
 }
@@ -102,7 +103,7 @@ a:hover{
   justify-content: space-between;
 }
 
-.inputs input {
+input {
   display: flex;
   align-items: center;
   padding: 1.6rem 1.2rem;
@@ -117,13 +118,30 @@ a:hover{
   transition: all 200ms;
 }
 
-.inputs input::placeholder{
+form span{
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  color: #ED3A5A;
+  display: none;
+}
+
+form input::placeholder{
   color: #94a3b8;
 }
 
-.inputs input:hover,
-.inputs input:focus{
+form input:hover,
+form input:focus{
   border: .1rem solid #7C3AED;
+  outline: none;
+}
+
+form input:invalid{
+  border: .1rem solid #ED3A5A;
+}
+
+form:has(:invalid) span{
+  display: block;
 }
 
 .enter {
