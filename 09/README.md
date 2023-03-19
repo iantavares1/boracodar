@@ -4,9 +4,9 @@
 </p>
 
 <p align="center">
-  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a align="left" href="https://iantavares1.github.io/boracodar/09/"><img align="center" width="20px"src="../.github/rocket.jpg"> Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#layout">Layout</a>
-  
 </p>
 
 <br>
