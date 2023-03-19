@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img src=".github/preview.jpg" width="100%">
+  <img src="../.github/previews/06.jpg" width="100%">
 </p>
 
 ## Tecnologias
