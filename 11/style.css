@@ -198,3 +198,26 @@ footer {
   }
 }
 
+@media (max-height: 750px){
+  .logo{
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-height: 660px){
+  .logo{
+    margin-bottom: 0;
+  }
+}
+
+@media (max-height: 660px){
+  .main{
+    gap: 2rem
+  }
+}
+
+@media (max-height: 530px){
+  .top{
+    display: none;
+  }
+}
