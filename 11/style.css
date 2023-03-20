@@ -186,16 +186,15 @@ footer {
 
 @media (max-width: 500px){
   body{
-    display: flex;
-    justify-content: center;
+    background: #f8fafc;
+    grid-template-columns: 1fr;
   }
   .bg{
     display: none;
   }
   .app{
-    width: 100vw;
-    height: 999rem;
+    display: grid;
+    place-content: center;
   }
 }
-
 
