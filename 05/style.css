@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3 0.2rem;
+  gap: 0.2rem;
   font-weight: 400;
   letter-spacing: -0.02em;
   color: #ebebeb;
@@ -132,4 +132,45 @@ button:hover {
 
 .pink-bg:hover {
   background-color: #8955e4;
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 30rem;
+  }
+  .keyboard {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-height: 580px){
+  .container{
+    height: 50rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-height: 520px){
+  button{
+    width: 5rem;
+    height: 5rem;
+  }
+  .container{
+    height: 40rem;
+  }
+  .keyboard{
+    margin-top: 0;
+    gap: 0.5rem 2rem;
+  }
+}
+
+@media (max-height: 420px){
+  button{
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+  }
+  .container{
+    height: 30rem;
+  }
 }
