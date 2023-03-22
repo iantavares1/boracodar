@@ -82,5 +82,11 @@
             <td align="center" ><a href="../11"><img width="300px" src="./previews/11.jpg" /></a></td>
             <td align="center"><a href="https://iantavares1.github.io/boracodar/11"><img width="30px" src="./rocket.jpg"/></a></td>
         </tr>
+        <tr>
+            <td><a href="../12">Kanban</a></td>
+            <td>EM BREVE</td>
+            <td align="center" ><a href="../12"><img width="300px" src="./previews/12.jpg" /></a></td>
+            <td align="center"><a href="https://iantavares1.github.io/boracodar/12"><img width="30px" src="./rocket.jpg"/></a></td>
+        </tr>
     </tbody>
 </table></p>
