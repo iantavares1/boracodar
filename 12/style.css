@@ -18,8 +18,16 @@ body {
   display: flex;
 }
 
+h1,
+h2,
+h3 {
+  color: #403937;
+  line-height: 130%;
+}
+
 nav {
-  margin: 148px 0 0 35px;
+  margin: 14.8rem -3rem 0 3.5rem;
+  min-width: 17.5rem;
   display: flex;
   flex-direction: column;
   width: 17.5rem;
@@ -29,15 +37,15 @@ nav {
 nav > img {
   position: absolute;
   width: 5rem;
-  left: 35px;
-  top: 32px;
+  left: 3.5rem;
+  top: 3.2rem;
 }
 
 nav section {
   height: 2rem;
   color: #cab3ff;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 125%;
   display: flex;
   align-items: center;
@@ -51,6 +59,31 @@ nav section img {
 .container {
   padding: 4.8rem 3.2rem;
   gap: 3.2rem;
+  width: calc(100vw - 17.5rem);
   background: #fbfaff;
   border-radius: 3.2rem 0rem 0rem 0rem;
+  display: grid;
+  gap: 3.2rem;
+}
+
+header {
+  height: 24px;
+  padding: 0 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header img {
+  width: 64px;
+}
+
+.title {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.title img{
+  width: 24px;
 }
