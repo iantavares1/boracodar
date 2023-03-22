@@ -58,25 +58,41 @@ nav section img {
 
 .container {
   padding: 4.8rem 3.2rem;
+  margin-top: 0.4rem;
   gap: 3.2rem;
   width: calc(100vw - 17.5rem);
   background: #fbfaff;
   border-radius: 3.2rem 0rem 0rem 0rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 3.2rem;
 }
 
 header {
-  height: 24px;
+  height: 6.4rem;
   padding: 0 2.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 header img {
-  width: 64px;
+  width: 6.4rem;
+  border-radius: 50%;
+}
+
+header > :nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    114deg,
+    rgba(124, 58, 237, 1) 42%,
+    rgba(168, 16, 198, 1) 100%
+  );
 }
 
 .title {
@@ -84,6 +100,51 @@ header img {
   gap: 1.2rem;
 }
 
-.title img{
-  width: 24px;
+.title img,
+middle > img {
+  width: 2.4rem;
+}
+
+middle {
+  height: 4.8rem;
+  display: flex;
+  gap: 1.6rem;
+  padding: 0 2.4rem;
+}
+
+#filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 3.2rem;
+  gap: 0.8rem;
+  width: 13.5rem;
+  background: #7c3aed;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  border: none;
+}
+
+#input-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+  width: 100%;
+  background: #ffffff;
+  border: 0.7px solid #e3e3e3;
+  box-shadow: 0px 4px 16px rgba(22, 22, 22, 0.1);
+  border-radius: 8px;
+}
+
+middle input {
+  all: unset;
+  width: 100%;
+}
+
+middle input::placeholder {
+  font-size: 16px;
+  color: #7c7c8a;
 }
