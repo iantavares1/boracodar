@@ -18,14 +18,39 @@ body {
   display: flex;
 }
 
-nav{
+nav {
+  margin: 148px 0 0 35px;
+  display: flex;
+  flex-direction: column;
   width: 17.5rem;
+  gap: 3.6rem;
+}
 
+nav > img {
+  position: absolute;
+  width: 5rem;
+  left: 35px;
+  top: 32px;
+}
+
+nav section {
+  height: 2rem;
+  color: #cab3ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+nav section img {
+  width: 2rem;
 }
 
 .container {
   padding: 4.8rem 3.2rem;
   gap: 3.2rem;
   background: #fbfaff;
-  border-radius: 3.2rem .0rem .0rem .0rem;
+  border-radius: 3.2rem 0rem 0rem 0rem;
 }
