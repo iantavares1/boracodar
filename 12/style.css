@@ -26,19 +26,18 @@ h3 {
 }
 
 nav {
+  position: fixed;
   margin: 14.8rem -3rem 0 3.5rem;
-  min-width: 17.5rem;
   display: flex;
   flex-direction: column;
-  width: 17.5rem;
   gap: 3.6rem;
 }
 
 nav > img {
   position: absolute;
   width: 5rem;
-  left: 3.5rem;
-  top: 3.2rem;
+  left: 0;
+  top: -11rem;
 }
 
 nav section {
@@ -57,10 +56,11 @@ nav section img {
 }
 
 .container {
+  height: fit-content;
+  margin-left: 17.5rem;
   padding: 4.8rem 3.2rem;
   margin-top: 0.4rem;
   gap: 3.2rem;
-  width: calc(100vw - 17.5rem);
   background: #fbfaff;
   border-radius: 3.2rem 0rem 0rem 0rem;
   display: flex;
@@ -101,11 +101,11 @@ header > :nth-child(2) {
 }
 
 .title img,
-middle > img {
+#middle > img {
   width: 2.4rem;
 }
 
-middle {
+#middle {
   height: 4.8rem;
   display: flex;
   gap: 1.6rem;
@@ -130,21 +130,91 @@ middle {
 #input-wrapper {
   display: flex;
   align-items: center;
-  padding: 24px;
-  gap: 10px;
+  padding: 2.4rem;
+  gap: 1.0rem;
   width: 100%;
   background: #ffffff;
-  border: 0.7px solid #e3e3e3;
-  box-shadow: 0px 4px 16px rgba(22, 22, 22, 0.1);
-  border-radius: 8px;
+  border: 0..7rem solid #e3e3e3;
+  box-shadow: .0rem .4rem 1.6rem rgba(22, 22, 22, 0.1);
+  border-radius: .8rem;
 }
 
-middle input {
+#middle input {
   all: unset;
   width: 100%;
 }
 
-middle input::placeholder {
-  font-size: 16px;
+#middle input::placeholder {
+  font-size: 1.6rem;
   color: #7c7c8a;
+}
+
+main {
+  display: grid;
+  grid-template: auto / 1fr 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.group {
+  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.group > div {
+  height: 15.0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2.4rem;
+  background: #ffffff;
+  box-shadow: .0rem .4rem 1.6rem #eae2fd;
+  border-radius: .8rem;
+}
+
+.group h2 {
+  margin-bottom: -2.4rem;
+  display: flex;
+  align-items: flex-start;
+  padding: 2.4rem 0;
+  gap: 1.0rem;
+}
+
+.group h3 {
+  font-size: 1.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.group div > p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 130%;
+  color: #756966;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.group span {
+  display: flex;
+  gap: .8rem;
+}
+
+.group span p {
+  padding: .4rem .8rem;
+  background: #e2d6ff;
+  border-radius: .8rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 130%;
+  color: #7c3aed;
+  text-align: center;
 }
