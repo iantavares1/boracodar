@@ -8,6 +8,7 @@
 
 :root {
   font-size: 62.5%;
+  user-select: none;
 }
 
 body {
@@ -47,6 +48,13 @@ nav section {
   gap: 1.6rem;
 }
 
+nav section:has(:hover),
+nav section:hover{
+  filter: brightness(999);
+  color: #fff;
+  cursor: pointer;
+}
+
 nav section h3 {
   font-weight: 500;
   font-size: 1.6rem;
@@ -79,7 +87,7 @@ header {
   align-items: center;
 }
 
-header img {
+header > :nth-child(2) img {
   width: 6.4rem;
   border-radius: 50%;
 }
@@ -106,6 +114,14 @@ header > :nth-child(2) {
 .title img,
 #middle > img {
   width: 2.4rem;
+}
+
+header > :nth-child(2) :hover,
+.title img:hover,
+#filter:hover,
+#input-wrapper img:hover,
+.group div:hover{
+  cursor: pointer;
 }
 
 #middle {
