@@ -19,6 +19,19 @@ body {
   display: flex;
 }
 
+body::-webkit-scrollbar-track {
+  background: #7c3aed;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #bdbbbb;
+  border-radius: 0.4rem;
+}
+
 h1,
 h2,
 h3 {
@@ -49,7 +62,7 @@ nav section {
 }
 
 nav section:has(:hover),
-nav section:hover{
+nav section:hover {
   filter: brightness(999);
   color: #fff;
   cursor: pointer;
@@ -68,6 +81,7 @@ nav section img {
 
 .container {
   height: fit-content;
+  width: 100%;
   margin-left: 17.5rem;
   padding: 4.8rem 3.2rem;
   margin-top: 0.4rem;
@@ -76,7 +90,6 @@ nav section img {
   border-radius: 3.2rem 0rem 0rem 0rem;
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
 }
 
 header {
@@ -120,7 +133,7 @@ header > :nth-child(2) :hover,
 .title img:hover,
 #filter:hover,
 #input-wrapper img:hover,
-.group div:hover{
+.group div:hover {
   cursor: pointer;
 }
 
@@ -270,19 +283,20 @@ main {
 @media (max-width: 48rem) {
   .container {
     z-index: 2;
-    margin-left: 8rem;
+    margin-left: 6rem;
   }
   nav {
     gap: 4rem;
   }
-  nav section{
-    margin-left: -1.5rem;
+  nav section {
+    margin-left: -2rem;
   }
   nav > img {
+    width: 3rem;
     left: -2rem;
   }
   nav section img {
-    width: 4rem;
+    width: 3rem;
   }
   nav section h3 {
     display: none;
@@ -290,18 +304,15 @@ main {
 }
 
 @media (max-width: 38rem) {
-  .container{
+  .container {
     padding: 4.8rem 0;
   }
 }
 
 @media (max-width: 32rem) {
-  .container{
+  .container {
     z-index: 2;
     margin-left: 0;
     border-radius: 0;
   }
 }
-
-
-
