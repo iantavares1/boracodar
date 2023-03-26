@@ -84,7 +84,7 @@
         </tr>
         <tr>
             <td><a href="../12">Kanban</a></td>
-            <td>EM BREVE</td>
+            <td>26/03/23</td>
             <td align="center" ><a href="../12"><img width="300px" src="./previews/12.jpg" /></a></td>
             <td align="center"><a href="https://iantavares1.github.io/boracodar/12"><img width="30px" src="./rocket.jpg"/></a></td>
         </tr>
