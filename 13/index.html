@@ -13,6 +13,40 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div id="app">
+    <div id="inputs-wrapper">
+      
+      <div class="input-field">
+        <label for="card-number">Número do cartão</label>
+        <input id="card-number" type="text">
+      </div>
+
+      <div class="input-field">
+        <label for="cardholder-name">Nome do titular</label>
+        <input id="cardholder-name"type="text">
+      </div>
+
+      <div>
+        <div class="input-field">
+          <label for="validity">Validade</label>
+          <input id="validity" type="text">
+        </div>
+
+       <div class="input-field"><label for="cvv">
+          CVV <img src="assets/svg/Question.svg" alt="svg">
+        </label>
+        <input id="cvv" type="password">
+      </div>
+        
+      </div>
+    </div>
+
+    <div id="card-wrapper">
+      <img src="assets/png/Creditcard.png" alt="Imagem de cartão de crédito">
+
+    </div>
+    <button id="add-card" type="submit">Adicionar cartão</button>
+  </div>
   
 </body>
 </html>
