@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário de cartão de crédito</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de cartão de crédito</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div id="app">
-    <div id="inputs-wrapper">
-      
-      <div class="input-field">
-        <label for="card-number">Número do cartão</label>
-        <input id="card-number" type="text">
-      </div>
-
-      <div class="input-field">
-        <label for="cardholder-name">Nome do titular</label>
-        <input id="cardholder-name"type="text">
-      </div>
-
-      <div>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="inputs-wrapper">
         <div class="input-field">
-          <label for="validity">Validade</label>
-          <input id="validity" type="text">
+          <label for="card-number">Número do cartão</label>
+          <input id="card-number" type="text" placeholder="Número do cartão" />
         </div>
 
-       <div class="input-field"><label for="cvv">
-          CVV <img src="assets/svg/Question.svg" alt="svg">
-        </label>
-        <input id="cvv" type="password">
+        <div class="input-field">
+          <label for="cardholder-name">Nome do titular</label>
+          <input id="cardholder-name" type="text" placeholder="Nome como está no cartão" />
+        </div>
+
+        <div id="row">
+          <div class="input-field">
+            <label for="validity">Validade</label>
+            <input id="validity" type="text" placeholder="mm/aa" />
+          </div>
+
+          <div class="input-field">
+            <label for="cvv">
+              CVV <img src="assets/svg/Question.svg" alt="svg" />
+            </label>
+            <input id="cvv" type="password" placeholder="***" />
+          </div>
+        </div>
       </div>
+
+      <div id="card-wrapper">
         
+        <div id="card">
+          <div id="icons-wrapper">
+            <img src="./assets/svg/visa.svg" alt="svg"></img>
+            <img src="./assets/svg/ContactlessPayment.svg" alt="svg"></img>
+          </div>
+
+          <input type="text" placeholder="····  ····  ····  ····">
+          <input type="text" placeholder="Seu nome aqui">
+          <input type="text" placeholder="../..">
+
+        </div>
+        
+        <span>
+          <img src="assets/svg/ShieldCheck.svg" alt="svg">
+          Seus dados estão seguros
+        </span>
       </div>
-    </div>
 
-    <div id="card-wrapper">
-      <img src="assets/png/Creditcard.png" alt="Imagem de cartão de crédito">
-
+      <button id="add-card" type="submit">Adicionar cartão</button>
     </div>
-    <button id="add-card" type="submit">Adicionar cartão</button>
-  </div>
-  
-</body>
+  </body>
 </html>
