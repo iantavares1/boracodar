@@ -6,10 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     card.classList.toggle("rotate");
   };
 
-  card.addEventListener("mousedown", rotate);
-  card.addEventListener("mouseup", rotate);
   cvv.addEventListener("focus", rotate);
   cvv.addEventListener("blur", rotate);
-  card.addEventListener("touchstart", rotate);
-  card.addEventListener("touchend", rotate);
 });
