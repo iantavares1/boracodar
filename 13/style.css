@@ -236,7 +236,11 @@ body {
 }
 
 @media (max-width: 24rem) {
+  body{
+    background: #1f2937;
+    }
   #app {
+    border: none;
     max-width: 30rem;
     padding: 1rem;
   }
