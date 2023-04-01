@@ -90,7 +90,7 @@
         </tr>
         <tr>
             <td><a href="../13">Formulário de cartão de crédito</a></td>
-            <td>EM ANDAMENTO</td>
+            <td>01/04/23</td>
             <td align="center" ><a href="../13"><img width="300px" src="./previews/13.jpg" /></a></td>
             <td align="center"><a href="https://iantavares1.github.io/boracodar/13"><img width="30px" src="./rocket.jpg"/></a></td>
         </tr>
