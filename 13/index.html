@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de cartão de crédito</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
   </head>
   <body>
     <div id="app">
@@ -38,30 +37,32 @@
             <label for="cvv">
               CVV <img src="assets/svg/Question.svg" alt="svg" />
             </label>
-            <input id="cvv" type="password" placeholder="***" />
+            <input id="cvv" type="password" placeholder="***"/>
           </div>
         </div>
       </div>
-
       <div id="card-wrapper">
-        <div id="card">
+        <div id="front" class="card">
           <div id="icons-wrapper">
             <img src="./assets/svg/visa.svg" alt="svg"></img>
             <img src="./assets/svg/ContactlessPayment.svg" alt="svg"></img>
           </div>
-
           <input type="text" placeholder="····  ····  ····  ····">
           <input type="text" placeholder="Seu nome aqui">
           <input type="text" placeholder="../..">
         </div>
-        
+        <div id="back" class="card" >
+          <div id="rectangle"></div>
+          <div id="cvv-back-wrapper">
+            <input type="text" id="cvv-back" placeholder="...">
+            <span>CVV</span>
+          </div>
+        </div>
       </div>
-
       <span id="your-data-is-safe">
         <img src="assets/svg/ShieldCheck.svg" alt="svg">
         Seus dados estão seguros
       </span>
-
       <button id="add-card" type="submit">Adicionar cartão</button>
     </div>
   </body>
