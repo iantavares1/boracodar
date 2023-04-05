@@ -26,7 +26,6 @@ body {
   background: #fbfaff;
   display: grid;
   place-content: center;
-  align-content: start;
 }
 
 h2,
@@ -36,7 +35,6 @@ span {
 
 #container {
   width: 44rem;
-  margin-top: 14.2rem;
   gap: 2rem;
 }
 
