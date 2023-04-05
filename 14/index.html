@@ -13,7 +13,68 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <div id="container" class="grid">
+      <div id="upload" class="grid">
+        <img src="./assets/CloudArrowUp.svg" alt="svg" />
+        <h2>Importe seus arquivos</h2>
+        <span>Arraste ou clique para fazer upload</span>
+      </div>
+      <div id="files-box" class="grid">
+        <div class="file">
+          <img src="./assets/Icon-in-progress.svg" alt="svg" />
+          <div class="file-info">
+            <div class="title">
+              <h2>Scann.pdf</h2>
+              <span>30 MB / 74 MB</span>
+            </div>
+            <button><img src="./assets/Cancel.svg" alt="svg" /></button>
+          </div>
+          <div class="file-status">
+            <div class="status-bar"></div>
+            <div class="status-bar-progress"></div>
+            <div class="percent">
+              <span>46%</span>
+            </div>
+          </div>
+        </div>
+        <div class="file">
+          <img src="./assets/Icon-sucess.svg" alt="svg" />
+          <div class="file-info">
+            <div class="title">
+              <h2>Readme.rm</h2>
+              <span>12 KB</span>
+            </div>
+          </div>
+          <div class="file-status">
+            <div class="status-bar"></div>
+            <div class="status-bar-progress"></div>
+            <div class="percent">
+              <span>100%</span>
+            </div>
+          </div>
+        </div>
+        <div class="file">
+          <img src="./assets/Icon-error.svg" alt="svg" />
+          <div class="file-info">
+            <div class="title">
+              <h2>Picture.jpeg</h2>
+              <span>6.3 MB</span>
+            </div>
+            <button><img src="./assets/Retry.svg" alt="svg" /></button>
+          </div>
+          <div class="file-status">
+            <div class="status-bar"></div>
+            <div class="status-bar-progress"></div>
+            <div class="percent">
+              <span>Erro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

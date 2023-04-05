@@ -1,16 +1,160 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  -moz-osx-font-smoothing: grayscale;
 }
 
-:root{
+:root {
   font-size: 62.5%;
+  user-select: none;
 }
 
-body{
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+body {
   font-size: 1.6rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  background: #fbfaff;
+  display: grid;
+  place-content: center;
+  align-content: start;
+}
+
+h2,
+span {
+  line-height: 130%;
+}
+
+#container {
+  width: 44rem;
+  margin-top: 14.2rem;
+  gap: 2rem;
+}
+
+#upload {
+  height: 16rem;
+  background: #f3f0ff;
+  border: 0.1rem dashed #c1b2fa;
+  border-radius: 0.8rem;
+  align-content: center;
+  justify-items: center;
+}
+
+#upload:hover {
+  cursor: pointer;
+  background: #ebe6ff;
+  transition: all 0.1s;
+}
+
+#upload > img {
+  margin-bottom: 1.2rem;
+}
+
+#upload h2 {
+  font-size: 1.6rem;
+  color: #7a5fec;
+}
+
+#upload span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #746e82;
+}
+
+#files-box {
+  gap: 1.2rem;
+}
+
+.file {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0rem 0.4rem 1.6rem #eae2fd;
+  border-radius: 0.8rem;
+  display: grid;
+  padding: 0.8rem;
+  gap: 0.4rem 0;
+  grid-template-columns: 5.6rem auto;
+}
+
+.file > img {
+  grid-row: 1/3;
+}
+
+.file-info,
+.file-status {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.file-info {
+  align-items: flex-start;
+}
+
+.file-status {
+  height: 1.6rem;
+  align-items: center;
+}
+
+.file h2 {
+  font-size: 1.4rem;
+  color: #575361;
+}
+
+.file span {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #857e95;
+  display: flex;
+  align-items: center;
+}
+
+.file button {
+  all: unset;
+}
+
+.file button:hover {
+  cursor: pointer;
+}
+
+.file .status-bar {
+  height: 0.8rem;
+  background: #e3e3ed;
+  border-radius: 99.9rem;
+  width: 32rem;
+}
+
+.file .status-bar-progress {
+  --value: x;
+  position: absolute;
+  height: 0.8rem;
+  border-radius: 99.9rem;
+  width: calc(var(--value) / 100 * 32rem);
+}
+
+#files-box :nth-child(1) .status-bar-progress {
+  --value: 46;
+  background: linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7c3aed 100%);
+}
+
+@media (max-width: 32rem) {
+  #container {
+    width: 30rem;
+  }
+  .file .status-bar {
+    width: 20rem;
+  }
+  .file .status-bar-progress {
+    width: calc((var(--value)) / 100 * 20rem);
+  }
 }
