@@ -94,5 +94,11 @@
             <td align="center" ><a href="../13"><img width="300px" src="./previews/13.jpg" /></a></td>
             <td align="center"><a href="https://iantavares1.github.io/boracodar/13"><img width="30px" src="./rocket.jpg"/></a></td>
         </tr>
+        <tr>
+            <td><a href="../14">Componente de upload</a></td>
+            <td>05/04/23</td>
+            <td align="center" ><a href="../14"><img width="300px" src="./previews/14.jpg" /></a></td>
+            <td align="center"><a href="https://iantavares1.github.io/boracodar/14"><img width="30px" src="./rocket.jpg"/></a></td>
+        </tr>
     </tbody>
 </table></p>
