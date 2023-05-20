@@ -41,6 +41,12 @@
     </thead>
     <tbody>
         <tr>
+            <td><a href="../01">Player de música</a></td>
+            <td>20/05/23</td>
+            <td align="center" ><a href="../01"><img width="300px" src="./previews/01.jpg" /></a></td>
+            <td align="center"><a href="https://iantavares1.github.io/boracodar/01/"><img width="30px" src="./rocket.jpg"/></a></td>
+        </tr>
+        <tr>
             <td><a href="../05">Calculadora</a></td>
             <td>03/02/23</td>
             <td align="center" ><a href="../05"><img width="300px" src="./previews/05.jpg" /></a></td>

@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+
+  height: 100vh;
+  color: #e1e1e6;
+  background: #0f0d13;
+
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  opacity: 0.6;
+}
+
+span {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 160%;
+  color: #c4c4cc;
+}
+
+#app {
+  --size: 28rem;
+
+  zoom: 2.2;
+  padding: 2.8rem;
+  width: calc(var(--size) + 5.6rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+
+  background: #2a2141;
+  border-radius: 0.9rem;
+}
+
+.info {
+  display: flex;
+  gap: 2.9rem;
+  align-items: center;
+}
+
+.info > img {
+  width: 8.4rem;
+  height: 8.4rem;
+  border-radius: 0.6rem;
+}
+
+.info .title {
+  display: grid;
+  gap: 0.7rem;
+  height: 5.2rem;
+}
+
+.controlls {
+  display: flex;
+  gap: 5rem;
+}
+
+.progress {
+  width: var(--size);
+  display: grid;
+  gap: 0.9rem;
+  position: relative;
+}
+
+.progress-bar,
+.progress-bar-time {
+  width: 100%;
+  height: 0.6rem;
+  background: #d9d9d9;
+  border-radius: 0.9rem;
+}
+
+.progress-bar {
+  opacity: 0.3;
+}
+
+.progress-bar-time {
+  width: calc(var(--size) * 0.75);
+  opacity: 0.8;
+  position: absolute;
+  animation: progress-bar linear 2s;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes progress-bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: calc(var(--size) * 0.75);
+  }
+}
+
+@media (max-width: 1080px) {
+  #app {
+    zoom: 1.5;
+  }
+}
+
+@media (max-width: 640px) {
+  #app {
+    zoom: 1;
+  }
+}
+
+@media (max-width: 380px) {
+  #app {
+    --size: 19rem;
+    padding: 3.8rem;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .info > img {
+    width: 19rem;
+    height: 19rem;
+  }
+}
+
+@media (max-height: 420px) {
+  .progress {
+    display: none;
+  }
+}
