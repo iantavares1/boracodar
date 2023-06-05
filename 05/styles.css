@@ -29,6 +29,13 @@
     #7f45e2;
 }
 
+.secondary-bg {
+  background: var(--secondary-bg);
+}
+.tertiary-bg {
+  background: var(--tertiary-bg);
+}
+
 body {
   font-size: 1.6rem;
   font-family: "Rubik", sans-serif;
@@ -107,9 +114,8 @@ span {
   gap: 1.2rem;
 }
 
-.keyboard > button {
+button {
   all: unset;
-  position: relative;
 
   width: var(--button-size);
   height: var(--button-size);
@@ -125,9 +131,44 @@ span {
     0rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1),
     0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.26), 0rem 0rem 0.2rem rgba(0, 0, 0, 0.29),
     inset 0rem 0.2rem 0.3rem rgba(255, 255, 255, 0.06);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.keyboard > button > :nth-child(1) {
+button:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    #2d2a37;
+}
+
+.secondary-bg:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.05) 0.01%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #56328f;
+}
+.tertiary-bg:hover {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #8959db;
+}
+
+.keyboard button > span {
+  position: relative;
+}
+
+.keyboard button > span > img {
   position: absolute;
   top: 50%;
   left: 50%;
