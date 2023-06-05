@@ -1,67 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible"content="IE=edge"/>
-    <meta name="viewport"content="width=device-width, initial-scale=1.0"/>
-    <title>Calculator</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
 
-    <link rel="preconnect"href="https://fonts.googleapis.com"/>
-    <link rel="preconnect"href="https://fonts.gstatic.com"crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet"href="style.css"/>
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <div id="container">
-      <div id="display">
-        <div id="top">1 + 1</div>
-        <div id="bottom">
-          <img src="assets/equals-icon.svg"/>
-          <div id="result">2</div>
+    <div class="app">
+      <div class="display">
+        <div class="calc">
+          <span style="color: #6b6b6b">1 + 1</span>
+        </div>
+        <div class="result">
+          <div class="result-img-wrapper">
+            <img src="./assets/equals-icon.svg" alt="svg" />
+          </div>
+          <span>2</span>
         </div>
       </div>
-      <div id="keyboard">
-        <button id="ce">CE</button>
-        <button id="clear">C</button>
-        <button id="percent">
-          <img src="assets/percent.svg"/>
+      <div class="keyboard">
+        <button class="ce">
+          <span style="color: #975dfa">CE</span>
         </button>
-        <button id="divide" class="purple-bg">
-          <img src="assets/divide.svg"/>
+        <button class="clear">
+          <span>C</span>
         </button>
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button id="multiply" class="purple-bg">
-          <img src="assets/x.svg"/>
+        <button class="percent">
+          <span>
+            <img src="./assets/percent.svg" alt="svg" />
+          </span>
         </button>
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button>
-        <button id="minus" class="purple-bg">
-          <img src="assets/minus.svg"/>
+        <button class="divide" style="background: var(--secondary-bg)">
+          <span>
+            <img class="divide" src="./assets/divide.svg" alt="svg" />
+          </span>
         </button>
-        <button id="one">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button id="plus" class="purple-bg">
-          <img src="assets/plus.svg"/>
+        <button class="seven">
+          <span>7</span>
         </button>
-        <button id="plus-minus">
-          <img src="assets/plusMinus.svg"/>
+        <button class="eight">
+          <span>8</span>
         </button>
-        <button id="zero">0</button>
-        <button id="comma">,</button>
-        <button id="equals" class="pink-bg">
-          <img src="assets/equals.svg"/>
+        <button class="nine">
+          <span>9</span>
+        </button>
+        <button class="multiply" style="background: var(--secondary-bg)">
+          <span>
+            <img class="multiply" src="./assets/multiply.svg" alt="svg" />
+          </span>
+        </button>
+        <button class="four">
+          <span>4</span>
+        </button>
+        <button class="five">
+          <span>5</span>
+        </button>
+        <button class="six">
+          <span>6</span>
+        </button>
+        <button class="minus" style="background: var(--secondary-bg)">
+          <span>
+            <img class="minus" src="./assets/minus.svg" alt="svg" />
+          </span>
+        </button>
+        <button class="one">
+          <span>1</span>
+        </button>
+        <button class="two">
+          <span>2</span>
+        </button>
+        <button class="three">
+          <span>3</span>
+        </button>
+        <button class="plus" style="background: var(--secondary-bg)">
+          <span>
+            <img class="plus" src="./assets/plus.svg" alt="svg" />
+          </span>
+        </button>
+        <button class="plus-minus">
+          <span>
+            <img src="./assets/plusMinus.svg" alt="svg" />
+          </span>
+        </button>
+        <button class="zero">
+          <span>0</span>
+        </button>
+        <button class="comma">
+          <span>,</span>
+        </button>
+        <button class="equals" style="background: var(--tertiary-bg)">
+          <span>
+            <img src="./assets/equals.svg" alt="svg" />
+          </span>
         </button>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
