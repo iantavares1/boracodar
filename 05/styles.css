@@ -132,9 +132,6 @@ button {
     0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.26), 0rem 0rem 0.2rem rgba(0, 0, 0, 0.29),
     inset 0rem 0.2rem 0.3rem rgba(255, 255, 255, 0.06);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
 }
 
@@ -164,15 +161,12 @@ button:hover {
     #8959db;
 }
 
-.keyboard button > span {
-  position: relative;
-}
-
-.keyboard button > span > img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
+.keyboard button span {
+  width: var(--button-size);
+  height: var(--button-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 25rem) {
