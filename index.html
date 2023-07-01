@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    :root {
+      font-size: 62.5%;
+      --text-color: #e2e2e2;
+      --bg-color: #060014;
+    }
+
+    body {
+      font-size: 1.6rem;
+      font-family: "Inter", sans-serif;
+
+      height: 100vh;
+      background: var(--bg-color);
+    }
+
+    header {
+      position: relative;
+      padding: 3rem;
+
+      border-bottom: solid var(--text-color) 0.2rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a {
+      all: unset;
+      cursor: pointer;
+    }
+
+    h1 {
+      color: var(--text-color);
+      font-size: 4rem;
+      cursor: pointer;
+    }
+
+    header .links {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+    }
+
+    main {
+      margin: 0 auto;
+      padding-top: 5rem;
+      width: 80%;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+      gap: 2rem 5rem;
+    }
+
+    a.project img {
+      width: 100%;
+      border-radius: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        justify-content: space-between;
+      }
+
+      header .links {
+        position: initial;
+        order: 2;
+      }
+    }
+
+    @media (max-width: 425px) {
+      header {
+        zoom: 0.7;
+      }
+      main {
+        padding-top: 3rem;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      }
+    }
+
+    @media (max-width: 375px) {
+    }
+  </style>
+  <body>
+    <header>
+      <span class="links">
+        <a href="https://github.com/iantavares1/boracodar"
+          ><img src="./assets/github.svg" alt="svg" /> </a
+        ><a href="https://www.rocketseat.com.br/"
+          ><img src="./assets/rocketseat.svg" alt="svg"
+        /></a>
+      </span>
+      <a class="title" href="https://www.rocketseat.com.br/boracodar"
+        ><h1>#boracodar</h1>
+      </a>
+    </header>
+    <main>
+      <a class="project" href="https://iantavares1.github.io/boracodar/01/">
+        <img src="./previews/01.png" alt="imagem de projeto" />
+      </a>
+      <a class="project" href="https://iantavares1.github.io/boracodar/05/">
+        <img src="./previews/05.png" alt="imagem de projeto" />
+      </a>
+      <a class="project" href="https://iantavares1.github.io/boracodar/06/">
+        <img src="./previews/06.png" alt="imagem de projeto" />
+      </a>
+      <a class="project" href="https://iantavares1.github.io/boracodar/07/">
+        <img src="./previews/07.png" alt="imagem de projeto" />
+      </a>
+      <a class="project" href="https://iantavares1.github.io/boracodar/08/">
+        <img src="./previews/08.png" alt="imagem de projeto" />
+      </a>
+      <a class="project" href="https://iantavares1.github.io/boracodar/09/">
+        <img src="./previews/09.png" alt="imagem de projeto" />
+      </a>
+      <a class="project" href="https://iantavares1.github.io/boracodar/10/">
+        <img src="./previews/10.png" alt="imagem de projeto" />
+      </a>
+      <a class="project" href="https://iantavares1.github.io/boracodar/11/">
+        <img src="./previews/11.png" alt="imagem de projeto" />
+      </a>
+      <a class="project" href="https://iantavares1.github.io/boracodar/12/">
+        <img src="./previews/12.png" alt="imagem de projeto" />
+      </a>
+      <a class="project" href="https://iantavares1.github.io/boracodar/13/">
+        <img src="./previews/13.png" alt="imagem de projeto" />
+      </a>
+      <a class="project" href="https://iantavares1.github.io/boracodar/14/">
+        <img src="./previews/14.png" alt="imagem de projeto" />
+      </a>
+    </main>
+  </body>
+</html>
