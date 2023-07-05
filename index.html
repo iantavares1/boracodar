@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <link rel="shortcut icon" href="./assets/rocket.ico" type="image/x-icon" />
+    <title>#boraCodar | Ian Tavares</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -24,43 +25,64 @@
     :root {
       font-size: 62.5%;
       --text-color: #e2e2e2;
-      --bg-color: #060014;
+      --bg-color: #131313;
     }
 
     body {
       font-size: 1.6rem;
-      font-family: "Inter", sans-serif;
+      font-family: "Roboto", sans-serif;
 
       height: 100vh;
       background: var(--bg-color);
     }
 
+    ::-webkit-scrollbar {
+      width: 1rem;
+      background: #111;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #3c3c3c;
+      border-radius: 0.5rem;
+    }
+
     header {
       position: relative;
-      padding: 3rem;
+      padding: 2.5rem;
 
-      border-bottom: solid var(--text-color) 0.2rem;
+      border-bottom: solid #444444 0.1rem;
+      background: #0e0e0e;
+      color: var(--text-color);
 
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    a {
-      all: unset;
-      cursor: pointer;
+    header span {
+      display: flex;
+      gap: 1rem;
     }
 
-    h1 {
-      color: var(--text-color);
-      font-size: 4rem;
+    header a {
+      all: unset;
+      cursor: pointer;
+      display: flex;
+      place-content: center;
+    }
+
+    header h1 {
       cursor: pointer;
     }
 
     header .links {
       position: absolute;
-      top: 2rem;
-      left: 2rem;
+      top: 2.5rem;
+      left: 2.5rem;
+    }
+
+    header .links img {
+      zoom: 0.8;
     }
 
     main {
@@ -105,14 +127,14 @@
   <body>
     <header>
       <span class="links">
-        <a href="https://github.com/iantavares1/boracodar"
-          ><img src="./assets/github.svg" alt="svg" /> </a
+        <a href="https://github.com/iantavares1/boracodar">
+          <img id="github" src="./assets/github.svg" alt="svg" /> </a
         ><a href="https://www.rocketseat.com.br/"
-          ><img src="./assets/rocketseat.svg" alt="svg"
+          ><img id="rocketseat" src="./assets/rocketseat.svg" alt="svg"
         /></a>
       </span>
       <a class="title" href="https://www.rocketseat.com.br/boracodar"
-        ><h1>#boracodar</h1>
+        ><h1>#boraCodar</h1>
       </a>
     </header>
     <main>
