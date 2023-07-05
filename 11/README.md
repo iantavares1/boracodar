@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img src="../previews/11.png" width="100%">
+  <img src="../screenshots/11.png" width="100%">
 </p>
 
 ## Tecnologias
