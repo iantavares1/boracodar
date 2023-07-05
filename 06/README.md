@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <a align="left" href="https://iantavares1.github.io/boracodar/06/"><img align="center" width="20px"src="../.github/rocket.jpg"> Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a align="left" href="https://iantavares1.github.io/boracodar/06/"><img align="center" width="20px"src="../assets/rocket.png"> Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#layout">Layout</a>
 </p>
@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img src="../.github/previews/06.jpg" width="100%">
+  <img src="../previews/06.png" width="100%">
 </p>
 
 ## Tecnologias
