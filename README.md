@@ -47,6 +47,12 @@
             <td align="center"><a href="https://iantavares1.github.io/boracodar/01/"><img width="30px" src="./assets/rocket.png"/></a></td>
         </tr>
         <tr>
+            <td><a href="./02">Card de produto</a></td>
+            <td>05/07/23</td>
+            <td align="center" ><a href="./02"><img width="300px" src="./screenshots/02.png" /></a></td>
+            <td align="center"><a href="https://iantavares1.github.io/boracodar/02/"><img width="30px" src="./assets/rocket.png"/></a></td>
+        </tr>
+        <tr>
             <td><a href="./05">Calculadora</a></td>
             <td>03/02/23</td>
             <td align="center" ><a href="./05"><img width="300px" src="./screenshots/05.png" /></a></td>
