@@ -19,7 +19,7 @@
 
 Tecnologias utilizadas no projeto:
 
-- HTML, CSS e JS
+- HTML e CSS
 - Git e Github
 - Figma
 

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+
+  height: 100vh;
+  background: #d9cdf7;
+  display: grid;
+  place-content: center;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.app {
+  zoom: 3;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.sofa {
+  position: relative;
+  width: 28rem;
+}
+
+.sofa img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sofa button {
+  position: absolute;
+  top: 0.5rem;
+  right: 3rem;
+  height: 1.4rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.details {
+  color: #271a45;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.details .code {
+  font-size: 0.625rem;
+  font-weight: 300;
+}
+.details .price {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.details h1 {
+  font-family: "Crimson Pro";
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.info > button {
+  display: flex;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 62.4375rem;
+  border: 0.5px solid #271a45;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.info > button:hover {
+  background-color: #271a45;
+  color: white;
+}
+
+@media (max-width: 1440px) {
+  .app {
+    zoom: 2;
+  }
+}
+
+@media (max-width: 1024px) {
+  .app {
+    zoom: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    place-content: initial;
+    padding-top: 10rem;
+  }
+  .app {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .app {
+    zoom: 1;
+  }
+}
