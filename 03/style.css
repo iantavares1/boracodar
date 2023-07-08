@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-primary: #0b0911;
+  --bg-secondary: #1c162c;
+  --font-roboto: "Roboto", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --color-primary: #fff;
+  --color-secondary: #bfbec2;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--bg-primary);
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+h1 {
+  font-family: var(--font-inter);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+span {
+  color: var(--color-secondary);
+  font-family: var(--font-roboto);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+button {
+  all: unset;
+  font-family: var(--font-inter);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+img {
+  width: 1.5rem;
+}
+
+.about {
+  max-width: 50rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.app {
+  zoom: 1.6;
+  color: var(--color-primary);
+  background: var(--bg-primary);
+  display: flex;
+}
+
+aside {
+  max-width: 27rem;
+  padding: 7rem 3rem;
+  background: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+}
+
+aside .buttons {
+  margin-top: 4.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+aside .buttons > :first-child {
+  background: #8257e5;
+}
+
+aside .buttons > :first-child img {
+  display: none;
+  animation: rotate 1s infinite linear;
+}
+
+aside .buttons > :first-child:hover {
+  background: #9674e5;
+}
+
+aside .buttons > :first-child:focus {
+  outline: 0.2rem solid #d9cdf7;
+}
+
+aside .buttons > :nth-child(2) {
+  border-radius: 1.5rem;
+  opacity: 0.5;
+  background: #3c3748;
+  cursor: not-allowed;
+}
+
+aside .buttons > :last-child {
+  cursor: move;
+}
+
+aside .buttons button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1.5rem;
+}
+
+main {
+  padding: 7rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+}
+
+.buttons-board {
+  text-transform: uppercase;
+  background: var(--bg-secondary);
+  border-radius: 0.5rem;
+  border: solid 0.5rem var(--bg-secondary);
+  display: grid;
+}
+
+.buttons-board span {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-primary);
+}
+
+.top {
+  padding: 1rem;
+  grid-column: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top span {
+  padding: 0.7rem 4.4rem;
+}
+
+.top > :last-child {
+  padding: 0.7rem 0.5rem;
+}
+
+.side {
+  padding: 2rem 0;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.side span {
+  padding: 1.1rem 0.8rem;
+}
+
+.examples {
+  padding: 2rem;
+  background: var(--bg-primary);
+  display: flex;
+  gap: 2rem;
+}
+
+.examples > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.examples button {
+  width: fit-content;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1.5rem;
+  font-family: var(--font-inter);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.primary button {
+  background: #8257e5;
+}
+
+.primary .hover {
+  background: #9674e5;
+}
+.secondary .hover {
+  background: #6a617f;
+}
+
+.secondary button {
+  background: #3c3748;
+}
+
+.cursor {
+  padding: 0.5rem 0;
+}
+
+.cursor img {
+  width: 1rem;
+}
+
+.focus {
+  outline: 0.2rem solid #d9cdf7;
+}
+
+button.loading {
+  cursor: wait;
+}
+
+.loading img {
+  animation: rotate 1s infinite linear;
+}
+
+button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.movable {
+  cursor: move;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1700px) {
+  .app {
+    zoom: 1.4;
+  }
+}
+
+@media (max-width: 1440px) {
+  .app {
+    zoom: 1.2;
+  }
+}
+
+@media (max-width: 1240px) {
+  .app {
+    zoom: 1;
+  }
+}
+
+@media (max-width: 1040px) {
+  body {
+    justify-content: center;
+    background: var(--bg-secondary);
+  }
+  .app {
+    zoom: 1.6;
+  }
+  main {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .app {
+    zoom: 1;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botões e cursores</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <main>
+        <div class="about">
+          <h1>Tipos de botão</h1>
+          <span>
+            Dentro de um layout, botões servem para destacar ações importantes a
+            serem tomadas. Acompanhe abaixo um exemplo de tipos e propriedades.
+          </span>
+        </div>
+        <div class="buttons-board">
+          <div class="top">
+            <span>botão primário</span>
+            <span>botão secundário</span>
+            <span>botão terciário</span>
+            <span>cursor</span>
+          </div>
+          <div class="side">
+            <span>default</span>
+            <span>hover</span>
+            <span>focus</span>
+            <span>disabled</span>
+            <span>loading</span>
+            <span>movable</span>
+          </div>
+          <div class="examples">
+            <div class="primary">
+              <button class="deafult">default primary</button>
+              <button class="hover">hover primary</button>
+              <button class="focus">focus primary</button>
+              <button class="disabled">disabled primary</button>
+              <button class="loading">
+                <img src="./assets/load.svg" alt="svg" />loading primary
+              </button>
+              <button class="movable">
+                <img src="./assets/bars.svg" alt="svg" />movable primary
+              </button>
+            </div>
+            <div class="secondary">
+              <button class="deafult">default secondary</button>
+              <button class="hover">hover secondary</button>
+              <button class="focus">focus secondary</button>
+              <button class="disabled">disabled secondary</button>
+              <button class="loading">
+                <img src="./assets/load.svg" alt="svg" />loading secondary
+              </button>
+              <button class="movable">
+                <img src="./assets/bars.svg" alt="svg" />movable secondary
+              </button>
+            </div>
+            <div class="tertiary">
+              <button class="deafult">default tertiary</button>
+              <button class="hover">hover tertiary</button
+              ><button class="focus">focus tertiary</button>
+              <button class="disabled">disabled tertiary</button
+              ><button class="loading">
+                <img src="./assets/load.svg" alt="svg" />loading tertiary
+              </button>
+              <button class="movable">
+                <img src="./assets/bars.svg" alt="svg" />movable tertiary
+              </button>
+            </div>
+            <div class="cursor">
+              <img src="./assets/default.svg" alt="svg" />
+              <img src="./assets/default.svg" alt="svg" />
+              <img src="./assets/default.svg" alt="svg" />
+              <img src="./assets/disabled.svg" alt="svg" />
+              <img src="./assets/loading.svg" alt="svg" />
+              <img src="./assets/movable.svg" alt="svg" />
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <div class="about">
+          <h1>Teste os botões</h1>
+          <span
+            >Interaja com os botões e observe a mudança de aparência e de
+            cursores
+          </span>
+        </div>
+
+        <div class="buttons">
+          <button>
+            <img src="./assets/load.svg" alt="svg" />interaja comigo
+          </button>
+          <button>interaja comigo</button>
+          <button>
+            <img src="./assets/bars.svg" alt="svg" />interaja comigo
+          </button>
+        </div>
+      </aside>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
