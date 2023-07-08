@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <span class="info-wrapper">
+          <img src="./assets/Foto.svg" alt="foto de perfil" />
+          <span class="info"
+            ><h1>Cecilia Sassaki</h1>
+            <span
+              ><div class="circle"></div>
+              Online</span
+            ></span
+          >
+        </span>
+        <button>
+          <img src="./assets/close.svg" alt="svg" />
+        </button>
+      </header>
+      <main>
+        <span class="time">Hoje 11:30</span>
+        <div class="message-wrapper left">
+          <span class="time">Cecilia - 11:30</span>
+          <span class="message"
+            >Tive uma ideia incrível para um projeto! 😍</span
+          >
+        </div>
+        <div class="message-wrapper right">
+          <span class="time">Você - 11:32</span>
+          <span class="message">Sério? Me conta mais.</span>
+        </div>
+        <div class="message-wrapper left">
+          <span class="time">Cecilia - 11:34</span>
+          <span class="message"
+            >E se a gente fizesse um chat moderno e responsivo em apenas uma
+            semana?</span
+          >
+        </div>
+        <div class="message-wrapper right">
+          <span class="time">Você - 11:36</span>
+          <span class="message"><strong>#boraCodar!</strong> 🚀</span>
+        </div>
+      </main>
+      <footer>
+        <div class="input-wrapper">
+          <label for="send-message"></label>
+          <input
+            name="send-message"
+            type="text"
+            placeholder="Digite sua mensagem"
+          />
+          <button class="send">
+            <img src="./assets/send.svg" alt="svg" />
+          </button>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

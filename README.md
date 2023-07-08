@@ -77,6 +77,20 @@
                 </td>
             </tr>
             <tr>
+                <td><a href="./04">Botões e cursores</a></td>
+                <td>08/07/23</td>
+                <td align="center" >
+                    <a href="./04">
+                        <img width="300px" src="./screenshots/04.png" />
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://iantavares1.github.io/boracodar/04/">
+                        <img width="30px" src="./assets/rocket.png"/>
+                    </a>
+                </td>
+            </tr>
+            <tr>
                 <td><a href="./05">Calculadora</a></td>
                 <td>03/02/23</td>
                 <td align="center" >
